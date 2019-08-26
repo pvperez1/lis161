@@ -2,6 +2,8 @@
 <html>
 <head>
 	<title>My Sample Art Store</title>
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<link href="https://fonts.googleapis.com/css?family=Poiret+One|Slabo+27px&display=swap" rel="stylesheet">
 </head>
 <body>
 	<header>
@@ -16,25 +18,31 @@
 	</header>
 
 	<article>
-		<h2>Mademoiselle Caroline Rivi&egrave;re</h2>
-		<p>by <a href="#">Jean-Auguste-Dominique Ingres</a></p>
-		<img src="images/painting1_medium.jpg" alt="Portrait of Mademoiselle Caroline Riviere" title="Mademoiselle Caroline Riviere">
-		<p>The portrait of Mademoiselle Caroline Riviere was painted in 1806 by the French Neoclassical artist Jean Auguste Domonique Ingres and today hangs in the Louvre. It is the third of three portraits of the Riviere family the artist painted that year.</p>
-		<p>
-			<strong>Date:</strong><em>1806</em><br>
-			<strong>Medium:</strong><em>Oil on Canvas</em><br>
-			<strong>Dimensions:</strong><em>100 x 70 cm</em><br>
-			<strong>Home:</strong><em>Musee du Louvre, Paris</em><br>
-		</p>
-		<img src="images/add-to-basket_btn.png">
-		<img src="images/add-to-favorites_btn.png">
-		<p>
-			Share:
-			<img src="images/social/email_16.png">
-			<img src="images/social/twitter_16.png">
-			<img src="images/social/facebook_16.png">
-			<img src="images/social/sharethis_16.png">
-		</p>
+		<div class="article-header">
+			<h2>Mademoiselle Caroline Rivi&egrave;re</h2>
+			<p>by <a href="#">Jean-Auguste-Dominique Ingres</a></p>
+			<img src="images/painting1_medium.jpg" alt="Portrait of Mademoiselle Caroline Riviere" title="Mademoiselle Caroline Riviere">
+		</div>
+		<div class="article-content">
+			<p>The portrait of Mademoiselle Caroline Riviere was painted in 1806 by the French Neoclassical artist Jean Auguste Domonique Ingres and today hangs in the Louvre. It is the third of three portraits of the Riviere family the artist painted that year.</p>
+			<p>
+				<strong>Date:</strong><em>1806</em><br>
+				<strong>Medium:</strong><em>Oil on Canvas</em><br>
+				<strong>Dimensions:</strong><em>100 x 70 cm</em><br>
+				<strong>Home:</strong><em>Musee du Louvre, Paris</em><br>
+			</p>
+		</div>
+		<div>
+			<img src="images/add-to-basket_btn.png">
+			<img src="images/add-to-favorites_btn.png">
+			<p>
+				Share:
+				<img src="images/social/email_16.png">
+				<img src="images/social/twitter_16.png">
+				<img src="images/social/facebook_16.png">
+				<img src="images/social/sharethis_16.png">
+			</p>
+		</div>
 	</article>
 	
 	<section id="related">
@@ -45,33 +53,45 @@
 		<img src="images/related4_small.jpg">
 	</section>
 	
-	<section>
+	<section id=reviews>
 		<h3>Reviews</h3>
-		<p>
-			<strong>Love this painting</strong><br>
-			John Smith
-			<img src="images/star-orange.png">
-			<img src="images/star-orange.png">
-			<img src="images/star-orange.png">
-			<img src="images/star-orange.png">
-			<img src="images/star-white.png">
-		</p>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at ultrices massa, eleifend scelerisque libero. Sed tellus diam, volutpat ac justo ac, rhoncus eleifend nunc. Curabitur ornare dui lobortis ipsum pellentesque efficitur. 
-		</p>
+		<div class="review">
+			<div class="review-header">
+				<p>
+					<strong>Love this painting</strong><br>
+					John Smith
+					<img src="images/star-orange.png">
+					<img src="images/star-orange.png">
+					<img src="images/star-orange.png">
+					<img src="images/star-orange.png">
+					<img src="images/star-white.png">
+				</p>	
+			</div>
+			<div class="review-content">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at ultrices massa, eleifend scelerisque libero. Sed tellus diam, volutpat ac justo ac, rhoncus eleifend nunc. Curabitur ornare dui lobortis ipsum pellentesque efficitur. 
+				</p>	
+			</div>
+		</div>
 		<hr>
-		<p>
-			<strong>It's okay</strong><br>
-			Jane Doe
-			<img src="images/star-orange.png">
-			<img src="images/star-orange.png">
-			<img src="images/star-orange.png">
-			<img src="images/star-white.png">
-			<img src="images/star-white.png">
-		</p>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at ultrices massa, eleifend scelerisque libero.
-		</p>
+		<div class="review">
+			<div class="review-header">
+				<p>
+					<strong>It's okay</strong><br>
+					Jane Doe
+					<img src="images/star-orange.png">
+					<img src="images/star-orange.png">
+					<img src="images/star-orange.png">
+					<img src="images/star-white.png">
+					<img src="images/star-white.png">
+				</p>
+			</div>
+		</div>
+		<div class="review-content">
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at ultrices massa, eleifend scelerisque libero.
+			</p>			
+		</div>
 		<hr>
 	</section>
 	
@@ -84,27 +104,5 @@
 		</p>
 		<p><em>Copyright &copy; 2013 My Sample Art Store</em></p>
 	</footer>
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
 </html>
